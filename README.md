@@ -1,2 +1,2 @@
-# django_basics
+# geekshop
 Django Basics course home works
