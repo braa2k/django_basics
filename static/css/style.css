@@ -1,0 +1,230 @@
+body {background: #f8f8f8;}
+.header {
+    position: relative;
+    height: 120px;
+    background: url('/static/img/header_background.jpg') no-repeat 100%;
+    display: table;
+    width: auto;
+    white-space: nowrap;
+}
+.header #logo {
+    height: 100%;
+    width: 100px;
+    margin-left: 10px;
+    background: url('/static/img/cool_vinyl_store_logo.jpg') no-repeat center center;
+    background-size: contain;
+    /*display: table-cell;*/
+}
+.header #store_name {
+    font-size: 22px;
+    font-family: Impact;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.header #empty_pad {
+    display: table-cell;
+    width: 100%;
+}
+.footer {
+    background-color: #efe8f9;
+    height:80px;
+    text-align: right;
+    padding: 20px 20px 0 0;
+}
+/*Главное меню*/
+.main_menu {
+    /*float: right;*/
+    /*margin-right: 10px;*/
+    display: table-cell;
+    vertical-align: bottom;
+}
+.main_menu li {
+    font-family: sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    display: inline;
+    padding-right: 5px;
+    font-weight: bold;
+}
+.main_menu li a {
+    text-decoration: none;
+    color: darkred;
+}
+.main_menu li a:hover {
+    color: darkblue;
+}
+/*Каталог*/
+.catalog_mainField {
+    width: 100%;
+    float: left;
+}
+.catalog_unitWrap {
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    outline: 1px solid #34025e;
+}
+.catalog_unitWrap:nth-child(3n) {
+    margin-right: 0%;
+}
+.catalog_unitImg {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+}
+.catalog_img {
+    width: 100%;
+/*    height: 240px; */
+}
+
+/*Формы*/
+.contact input[type="text"],input[type="email"] {
+    width: 50%;
+    height: 25px;
+    font-style: normal;
+    color: darkred;
+    font-size: 14px;
+}
+.contact #textarea1 {
+    background-color: #f8f8f8;
+    font-size: 12px;
+    font-style: inherit;
+    color: #34025e;
+}
+.contact input[type="email"]:focus {
+    color: blueviolet;
+    background: gainsboro;
+}
+.contact input[type="text"] {
+    text-transform: capitalize;
+}
+/*Товар*/
+.item_header {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.item_header_short {
+    margin-top: 0px;
+}
+.item_header_features {
+    clear: both;
+}
+.buy_div {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.item_img_wrap {
+    float: left;
+    width: 38%;
+    margin-right: 2%;
+}
+.short_descr_wrap {
+    width: 60%;
+    float: left;
+}
+.short_descr:first-letter, .item #long_descr p:first-letter {
+    font-size: 35px;
+    font-family: "Tempus Sans ITC";
+    font-weight: bolder;
+    color: deeppink;
+}
+.short_descr {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.item #long_descr {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.item_img:hover {
+    border-color: transparent;
+}
+.buy_button {
+    display: block;
+    float: right;
+    padding: 15px 25px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #274E7D;
+    font-weight: bold;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
+    background: #fceabb; /* Old browsers */
+    background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0); /* IE6-9 */
+}
+.buy_button:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+    background: #ffb76b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+}
+.buy_button:active {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+    background: #f0f9ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f9ff', endColorstr='#a1dbff', GradientType=0); /* IE6-9 */
+}
+/*Товар - таблицы*/
+.item_table {
+    border-collapse: collapse;
+}
+.item_table td {
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: left;
+    height: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: sans-serif;
+}
+.item_table tr:first-child td {
+    height: 40px;
+    vertical-align: middle;
+}
+.item_table td:first-child {
+    font-family: serif;
+    background-color: cornsilk;
+}
+.item_table td:nth-child(2) {
+    color: midnightblue;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.item_table ol {
+    list-style-image: url("/static/img/vinyl_list_marker2.jpg");
+    font-style: oblique;
+    font-size: 14px;
+    /*    margin-left: 0px; */
+}
+/*доп. задание*/
+.item_table td:nth-child(3), td:nth-child(4), tr:nth-child(5) td:nth-child(1n) {
+    color: lightgray;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Courier New";
+    background: lightcyan;
+    vertical-align: middle;
+    text-align: center;
+}
+.container {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
